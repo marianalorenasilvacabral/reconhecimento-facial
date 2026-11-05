@@ -1,0 +1,19 @@
+# PostgreSQL local para desenvolvimento. Requer Docker.
+# Subir:   docker compose up -d
+# Parar:   docker compose down        (os dados ficam guardados no volume)
+# Apagar tudo, inclusive os dados:  docker compose down -v
+services:
+  banco:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: reconhecimento
+      POSTGRES_PASSWORD: troque_esta_senha
+      POSTGRES_DB: reconhecimento
+    ports:
+      - "127.0.0.1:5432:5432"   # acessível só deste computador
+    volumes:
+      - dados_postgres:/var/lib/postgresql/data
+
+volumes:
+  dados_postgres:

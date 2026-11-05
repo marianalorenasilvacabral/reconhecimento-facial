@@ -1,0 +1,21 @@
+node_modules/
+dist/
+__pycache__/
+.venv/
+# Credenciais e dados reais nunca devem ir para o repositório
+/.env
+backend/.env
+.env.test
+.tools/
+.npm-cache/
+frontend/.npm-cache/
+frontend/test-results/
+frontend/playwright-report/
+.pytest_cache/
+artifacts/
+api/.env
+api/.npm-cache/
+api/.env.test
+app/mobile/.env
+app/mobile/.expo/
+app/mobile/.npm-cache/

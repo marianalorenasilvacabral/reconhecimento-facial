@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Ponto Empresa",
+    "slug": "ponto-empresa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "pontoempresa",
+    "ios": { "supportsTablet": true },
+    "android": { "package": "com.pontoempresa.mobile", "usesCleartextTraffic": true },
+    "web": { "bundler": "metro", "name": "Ponto Empresa" },
+    "plugins": [["expo-image-picker", { "photosPermission": "Selecione as fotos autorizadas do funcionário para o reconhecimento facial.", "cameraPermission": "Use a câmera para cadastrar as cinco fotos do funcionário.", "microphonePermission": false }]]
+  }
+}

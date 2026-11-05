@@ -1,0 +1,12 @@
+Testes implementados: regras faciais, API, banco, privacidade das respostas, sessões do celular,
+carregamento do dlib real e fluxo no navegador com câmera/modelo simulados.
+
+Configure TEST_DATABASE_URL e BROWSER_TEST_DATABASE_URL em .env.test usando bancos DIFERENTES,
+exclusivos para testes, com nomes terminados em _teste ou _test. Os dados desses bancos são apagados.
+Nunca use o banco de cadastros.
+
+Na raiz: ./backend/.venv/Scripts/python.exe -m pytest tests -q
+No frontend: npm.cmd test; npm.cmd run build; npm.cmd run test:e2e
+
+Os testes de fotos reais dependem de PASTA_ROSTOS_TESTE. Sem as fotos, são pulados.
+Instruções completas no README.md e roteiro presencial em docs/VALIDACAO.md.
